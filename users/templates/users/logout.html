@@ -1,0 +1,16 @@
+ {% extends "base.html" %} 
+{% load crispy_forms_tags %}
+{% block content %}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<div class="container">
+    <h1 class="well">You Have Been Logout </h1>
+	<div class="col-lg-12 well">
+         <small class="text-muted">
+			<a class="ml-2" href='{% url 'login' %}'>Log In Again </a>
+		</small>
+	</div>
+{% endblock content%}
