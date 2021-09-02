@@ -1,1 +1,1 @@
-web:gunicorn.wgi --log-file -
+web: gunicorn luffyapp61.wsgi --log-file -
